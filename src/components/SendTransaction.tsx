@@ -6,8 +6,7 @@ import { useSendTransaction, useWaitForTransaction } from 'wagmi'
 import { stringify } from '../utils/stringify'
 
 export function SendTransaction() {
-  const { data, error, isLoading, isError, sendTransaction } =
-    useSendTransaction()
+  const { data, error, isLoading, isError, sendTransaction } = useSendTransaction()
   const {
     data: receipt,
     isLoading: isPending,

@@ -8,8 +8,7 @@ export function Account() {
 
   return (
     <div>
-      {ensName ?? address}
-      {ensName ? ` (${address})` : null}
+      {ensName ?? address} {ensName ? ` (${address})` : null}
     </div>
   )
 }
